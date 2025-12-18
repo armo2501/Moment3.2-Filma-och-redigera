@@ -1,0 +1,44 @@
+index.html
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Laboration 3.2 – Videobakgrund</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="video-container">
+    <video autoplay muted loop playsinline>
+        <source src="video.mp4" type="video/mp4">
+        Din webbläsare stödjer inte video.
+    </video>
+
+    <div class="content">
+        <h1>Videobakgrund</h1>
+        <p>
+            Detta är ett exempel på en videobakgrund skapad med HTML och CSS.
+            Videon är egeninspelad, saknar ljud och är optimerad för webben.
+        </p>
+    </div>
+</div>
+
+<section class="info">
+    <h2>Teknik</h2>
+    <p>
+        Videobakgrunden är skapad med HTML-elementet <code>&lt;video&gt;</code>
+        som positioneras med CSS bakom innehållet.
+        CSS-egenskaper som <code>position</code>, <code>object-fit</code>
+        och <code>z-index</code> används för att placera videon korrekt.
+    </p>
+
+    <p>
+        Tekniken baseras på denna guide:
+        <a href="https://www.w3schools.com/howto/howto_css_fullscreen_video.asp" target="_blank">
+            W3Schools – Fullscreen Video
+        </a>
+    </p>
+</section>
+
+</body>
+</html>
