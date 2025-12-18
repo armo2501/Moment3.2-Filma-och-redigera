@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Laboration 3.2 – Videobakgrund</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Videobakgrund */
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Innehåll ovanpå videon */
+        .overlay {
+            background: rgba(0, 0, 0, 0.4);
+            min-height: 100vh;
+            color: white;
+            padding: 60px 40px;
+        }
+
+        h1, h2 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            max-width: 800px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        ul {
+            max-width: 800px;
+            margin-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        a {
+            color: #aadfff;
+        }
+
+        .section {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Video -->
+<video class="video-bg" autoplay muted loop playsinline>
+    <source src="video.mp4" type="video/mp4">
+    Din webbläsare stödjer inte video.
+</video>
+
+<!-- Innehåll -->
+<div class="overlay">
+
+    <h1>Laboration 3.2 – Videobakgrund</h1>
+
+    <p>
+        Denna webbplats visar ett exempel på hur en videobakgrund kan användas
+        på en webbsida. Videon är egeninspelad, ljudlös och loopas för att skapa
+        ett lugnt visuellt intryck.
+    </p>
+
+    <div class="section">
+        <h2>Teknik</h2>
+        <p>
+            Videobakgrunden är skapad med HTML-elementet <code>&lt;video&gt;</code>.
+            Med hjälp av CSS har videon placerats bakom innehållet och anpassats
+            för att täcka hela skärmen med <code>object-fit: cover</code>.
+            Videon spelas automatiskt, loopas och saknar ljud.
+        </p>
+
+        <p>
+            Tekniken är baserad på denna guide:
+            <a href="https://www.w3schools.com/howto/howto_css_fullscreen_video.asp" target="_blank">
+                W3Schools – Fullscreen Video
+            </a>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Exempel på webbplatser med videobakgrund</h2>
+        <ul>
+            <li>
+                <strong>Devocy kommunikationsbyrå</strong> –
+                <a href="https://www.devocy.com/" target="_blank">
+                    https://www.devocy.com/
+                </a><br>
+                Använder en loopad och ljudlös videobakgrund i sin header.
+            </li>
+
+            <li>
+                <strong>Rafael Conde</strong> –
+                <a href="https://rafa.design" target="_blank">
+                    https://rafa.design
+                </a><br>
+                Använder helskärmsvideobakgrund bakom innehållet.
+            </li>
+
+            <li>
+                <strong>Domesi Concept Houses</strong> –
+                <a href="https://www.domesiconcepthouse.cz/en/" target="_blank">
+                    https://www.domesiconcepthouse.cz/en/
+                </a><br>
+                Använder videobakgrund för att visa arkitektur i rörelse.
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
